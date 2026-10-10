@@ -47,8 +47,16 @@ if __name__ == "__main__":
     if not api_key:                                   # NEW
         print("Error: ANTHROPIC_API_KEY not set")     # NEW
         sys.exit(1)                                   # NEW
-    agent = AIAgent(api_key)                          # NEW
+    agent = AIAgent(api_key)        
+    # NEW
 
+if __name__ == "__main__":
+    api_key = os.environ.get("ANTHROPIC_API_KEY")     # NEW
+    if not api_key:                                   # NEW
+        print("Error: ANTHROPIC_API_KEY not set")     # NEW
+        sys.exit(1)                                   # NEW
+    agent = AIAgent(api_key)        
+  
 # ```bash
 # export ANTHROPIC_API_KEY="your-api-key-here"
 # uv run --python python3.12 runbook/02_agent_class.py
