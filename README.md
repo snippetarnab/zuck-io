@@ -1,5 +1,8 @@
 # zuck-io
+
 A python base payement platform
+
 # This is installment guide
 
- * ```pip install ```
+- Download guide
+- `pip install `
