@@ -1,10 +1,3 @@
-# /// script
-# requires-python = ">=3.12"
-# dependencies = [
-#     "anthropic", # type: ignore
-#     "pydantic",
-# ]
-# ///
 
 import os
 import sys
@@ -49,8 +42,3 @@ if __name__ == "__main__":
         sys.exit(1)                                   # NEW
     agent = AIAgent(api_key)                          # NEW
 
-# ```bash
-# export ANTHROPIC_API_KEY="your-api-key-here"
-# uv run --python python3.12 runbook/02_agent_class.py
-# ```
-# Should print: Agent initialized
