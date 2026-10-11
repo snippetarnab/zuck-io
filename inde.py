@@ -56,7 +56,8 @@ if __name__ == "__main__":
         print("Error: ANTHROPIC_API_KEY not set")     # NEW
         sys.exit(1)                                   # NEW
     agent = AIAgent(api_key)        
-  
+logging.getLogger('httpcore').setLevel(logging.WARNING)  # NEW
+logging.getLogger('httpx').setLevel(logging.WARNING) 
 # ```bash
 # export ANTHROPIC_API_KEY="your-api-key-here"
 # uv run --python python3.12 runbook/02_agent_class.py
